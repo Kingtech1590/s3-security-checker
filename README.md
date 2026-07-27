@@ -34,7 +34,7 @@ python s3_checker.py --demo --output report.json
 ```
 S3 Bucket Security Audit — 2026-07-24T15:27:41+00:00
 ============================================================
-Buckets scanned: 3   Total findings: 5
+Buckets scanned: 3   Total findings: 6
 
 Bucket: company-public-assets
   [CRITICAL] Public Access Block is not fully enabled
@@ -47,6 +47,7 @@ Bucket: company-app-logs
 
 Bucket: company-db-backups
   [HIGH    ] No default server-side encryption configured
+  [MEDIUM  ] Versioning is not enabled (reduces ransomware/accidental-delete resilience)
 ```
 
 ## Requirements
